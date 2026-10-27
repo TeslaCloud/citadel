@@ -1,0 +1,8 @@
+"citadel"
+{
+  "title"         "Citadel"
+  "author"        "TeslaCloud Studios"
+  "description"   "The lobby of a Flux server network: a chatbox, player ghosts and areas that move players to the other servers."
+  "version"       "1.0"
+  "menusystem"    "1"
+}

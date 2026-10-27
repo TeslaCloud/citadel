@@ -1,0 +1,16 @@
+depends:
+  - admin
+  - areas
+  - srcdsproxy
+  - 3dtexts
+  - staticents
+  - propprotection
+  - chatbox
+  - observer
+  - stamina
+  - thirdperson
+  - hints
+  - adminesp
+  - crosshair
+  - toolgun_fix
+  - weaponselect

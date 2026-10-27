@@ -1,0 +1,11 @@
+en:
+  config:
+    citadel:
+      title: Citadel
+      desc: Settings of the Citadel lobby.
+      ghost_alpha:
+        name: Ghost opacity
+        desc: How solid players are drawn, from 32 (barely visible) to 255 (fully solid).
+  hint:
+    citadel_lobby: "You are in the lobby of the network. Walk into a transfer area to join one of its servers."
+    citadel_servers: "You are in the lobby of the network. Type /servers to list its servers in your console, /server <name> to join one, or walk into a transfer area."

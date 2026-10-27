@@ -1,0 +1,13 @@
+categories:
+  citadel:
+    name: config.citadel.title
+    description: config.citadel.desc
+configs:
+  ghost_alpha:
+    name: config.citadel.ghost_alpha.name
+    description: config.citadel.ghost_alpha.desc
+    category: citadel
+    type: number
+    min_value: 32
+    max_value: 255
+    default_value: 160
