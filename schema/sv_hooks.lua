@@ -1,9 +1,6 @@
 --- Server hooks of the schema: players are translucent ghosts who cannot hurt, use, spray or
 -- pick up anything, wear their own player model, and the map is not reloaded while empty.
 
---- Draws a player translucent with the given opacity.
--- @param actor [Player]
--- @param alpha [Number opacity from 0 to 255]
 local function set_ghost_look(actor, alpha)
   actor:SetRenderMode(RENDERMODE_TRANSALPHA)
   actor:SetColor(Color(255, 255, 255, alpha))
