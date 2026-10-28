@@ -102,9 +102,9 @@ end
 -- @param new_value [Any value that is about to be stored]
 function SCHEMA:OnConfigSet(key, _old_value, new_value)
   if key == 'ghost_alpha' then
-    for _, client in player.Iterator() do
-      if !client:is_hidden() then
-        set_ghost_look(client, new_value)
+    for _, target in player.Iterator() do
+      if !target:is_hidden() then
+        set_ghost_look(target, new_value)
       end
     end
   end
