@@ -39,7 +39,7 @@ end
 -- @param _victim [Player]
 -- @param _attacker [Entity]
 -- @return [Boolean false]
-function SCHEMA:FLPlayerShouldTakeDamage(_victim, _attacker)
+function SCHEMA:PlayerCanTakeDamage(_victim, _attacker)
   return false
 end
 
@@ -82,7 +82,7 @@ end
 --- Lets the base gamemode apply the player model each player has picked.
 -- @param _actor [Player]
 -- @return [Boolean false]
-function SCHEMA:PrePlayerSetModel(_actor)
+function SCHEMA:GetPlayerModel(_actor)
   return false
 end
 
@@ -92,12 +92,11 @@ function SCHEMA:ShouldServerAutoRestart()
   return false
 end
 
---- Applies a new 'ghost_alpha' value to every player who is not hidden. Runs before the value
--- is stored, so the new value is passed on.
+--- Applies the stored 'ghost_alpha' value to every player who is not hidden once it changes.
 -- @param key [String config key]
 -- @param _old_value [Any]
--- @param new_value [Any value that is about to be stored]
-function SCHEMA:OnConfigSet(key, _old_value, new_value)
+-- @param new_value [Any value that has been stored]
+function SCHEMA:ConfigChanged(key, _old_value, new_value)
   if key == 'ghost_alpha' then
     for _, target in player.Iterator() do
       if !target:is_hidden() then
