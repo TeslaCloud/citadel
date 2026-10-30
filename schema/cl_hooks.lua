@@ -13,7 +13,7 @@ function SCHEMA:PlayerInitialized()
 end
 
 --- Shows the lobby hint that applies to the local player as the intro fades out.
-function SCHEMA:OnIntroPanelRemoved()
+function SCHEMA:IntroPanelRemoved()
   if PLAYER:get_nv('self_transfer') == true then
     Hints:display('citadel_servers')
   else
