@@ -9,9 +9,22 @@ static entities, and draw the transfer areas.
 
 ## Installation
 
-Clone this repository next to `flux` in `garrysmod/gamemodes`, into a folder named `citadel`,
-and start the server with `+gamemode citadel`. Everything else (the database, the Workshop
-content and so on) is covered in [the Flux repository](https://github.com/TeslaCloud/flux-ce).
+Put this repository into `garrysmod/gamemodes` of the server, in a folder named `citadel`, run
+`fpkg install` anywhere in the server folder to install Flux and the other packages of the schema
+into its `packages` folder, and start the server with `+gamemode citadel`. The configuration of the
+server goes into `gamemodes/citadel/config/`.
+
+For development, run `fpkg link ../flux-ce` in this checkout to use a checkout of Flux instead of
+the published package, then `fpkg install` for the rest of the packages. To run the schema in a
+container, see the "Docker (development)" section of the Flux readme.
+
+Binary modules: `gmsv_file` is installed as a dependency of `flux`. A PostgreSQL server
+uncomments `s.depends 'gmsv_pg'` in `packagespec.lua` and runs `fpkg install`. MySQL and MariaDB
+need mysqloo, which you copy into `garrysmod/lua/bin` by hand from
+https://github.com/TeslaCloud/flux-dependencies.
+
+Everything else (the database, the Workshop content and so on) is covered in
+[the Flux repository](https://github.com/TeslaCloud/flux-ce).
 
 The srcdsproxy addon and its module must be installed on this server. Set the proxy's
 `default_backend` and `fallback_backend` to the name of this server.
