@@ -1,5 +1,7 @@
-db/
 /packages/*
+/db/
+/config/*
+!/config/.gitkeep
 *.local.yml
 *.local.lua
 /content/resource/fonts/fa-*.ttf
