@@ -1,0 +1,11 @@
+es:
+  config:
+    citadel:
+      title: Citadel
+      desc: Ajustes del lobby de Citadel.
+      ghost_alpha:
+        name: Opacidad de los fantasmas
+        desc: Qué tan sólidos se ven los jugadores, de 32 (apenas visibles) a 255 (totalmente sólidos).
+  hint:
+    citadel_lobby: "Estás en el lobby de la red. Entra en un área de traslado para unirte a uno de sus servidores."
+    citadel_servers: "Estás en el lobby de la red. Escribe /servers para ver la lista de sus servidores en tu consola, /server <nombre> para unirte a uno, o entra en un área de traslado."

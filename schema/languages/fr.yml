@@ -1,0 +1,11 @@
+fr:
+  config:
+    citadel:
+      title: Citadel
+      desc: "Paramètres du lobby Citadel."
+      ghost_alpha:
+        name: "Opacité des fantômes"
+        desc: "L'opacité avec laquelle les joueurs sont affichés, de 32 (à peine visibles) à 255 (entièrement opaques)."
+  hint:
+    citadel_lobby: "Vous êtes dans le lobby du réseau. Entrez dans une zone de transfert pour rejoindre l'un de ses serveurs."
+    citadel_servers: "Vous êtes dans le lobby du réseau. Tapez /servers pour afficher la liste de ses serveurs dans votre console, /server <nom> pour en rejoindre un, ou entrez dans une zone de transfert."
