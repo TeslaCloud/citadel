@@ -1,3 +1,6 @@
+--- The theme of the schema, the one it is played with by default. It builds on the factory
+-- theme of Flux and changes the accent colors and the font of the bars.
+
 THEME.author = 'TeslaCloud Studios'
 THEME.id = 'citadel'
 THEME.parent = 'factory'
